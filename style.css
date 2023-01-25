@@ -220,6 +220,16 @@ article h2 {
         right: 5vw;
         bottom: 10vh;
     }
+
+    
+    .hi {
+        position: absolute;
+        bottom: 35vh;
+    }
+    .answer {
+        position: absolute;
+        bottom: 30vh;
+    }
 }
 
 
