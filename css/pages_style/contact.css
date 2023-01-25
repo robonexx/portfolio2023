@@ -1,0 +1,151 @@
+#contact {
+    width: 100%;
+    max-height: 100vh !important;
+    /* background-color: #121212; */
+    background-color: transparent;
+    overflow-x: hidden;
+}
+
+.contact_bg {
+  width: inherit;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../../assets/images/meetingroom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  filter: grayscale(80%)  blur(5px); 
+  z-index: -1;
+}
+
+#contact > header > a > h3 {
+    color: white !important; 
+    text-shadow: 1px 1px 1px black ;
+}
+
+#contact h1 {
+  position: absolute;
+  top: 30vh;
+  color: white;
+  font-size: clamp(3rem, 3vw, 5rem);
+  text-shadow: 1px 1px black;
+}
+
+#contact h2 {
+  position: absolute;
+  top: 40vh;
+  text-shadow: 1px 1px black;
+}
+
+#contact > main {
+    margin: 120px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 90%;
+    /* background-color: #000000; */
+    background-color: transparent;
+    color: white;
+}
+
+.contact_page_icons {
+  width: 60%;
+  position: absolute;
+  top: 50vh;
+  z-index: 50;
+  display: grid;
+  place-content: center;
+  overflow: hidden; 
+}
+
+.contact_page_icons .social {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  background-color: var(--color-bg);
+  height: fit-content;
+  transition: all .3s ease-in-out 0s;
+  filter: drop-shadow(1´0px 1px 2px rgba(39, 39, 39, 0.425)); 
+  z-index: 99;
+}
+
+.contact_page_icons .social .soc-item {
+  margin: 0.75rem 1rem;
+}
+
+.contact_page_icons .social .soc-icon {
+  z-index: 20;
+  color: #070707;
+  font-size: 2rem;
+  padding: 0.25rem;
+  transition: all .3s ease-in-out;  
+}
+
+
+.contact_page_icons .social .soc-item:hover {
+  color: white;
+  filter: drop-shadow(0px 2px 4px rgba(17, 17, 17, 0.432));
+  transform: scale(1.15);
+}
+
+.contact_page_icons .social .soc-item:hover .social {
+  background-color: var(--color-bg-secondary);
+}
+
+
+/* Form I used first... styling still here, to see just uncomment on the contact.html page */
+
+#contact > main > form {
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-top:4rem;
+    margin: 0.8rem auto;
+    position:relative;
+    background-color: rgba(0, 0, 0, .35);
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25), inset 0 0 1px 0px rgba(207, 207, 207, 0.649);   
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1;
+  }
+
+  form > i {
+    width: 100%;  
+    font-size: 72px;
+    color: white;
+    text-align: center;
+  }
+  
+  form > input,
+  form > textarea {
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid #888;
+    color: #ddd;
+    background-color: #222;
+    border-radius: 5px;
+    display: block;
+    width: 70vw;
+  }
+  
+  form > textarea{
+    height:100px;
+    resize:none;
+  }
+  
+  form > input[type="submit"] {
+    max-width: 20vw;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+    transition: 0.35s;
+  }
+  
+  form > input[type="submit"]:hover {
+    background-color: #555;
+  }

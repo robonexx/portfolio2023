@@ -1,0 +1,120 @@
+.animate {
+    animation-play-state: running;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.stop {
+    animation-play-state: paused;
+}
+
+span,
+span.textSplit {
+    color: goldenrod;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+span:nth-child(even) {
+    color:#323232;
+}
+
+/* Slide Animations */
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;	   
+}
+
+.slideInLeft:nth-child(odd) {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+	    -webkit-transform: translateX(100vw);
+    transform: translateX(100vw);
+}
+
+@keyframes slideInLeft {
+    from {
+        -webkit-transform: translateX(-100vw);
+        transform: translateX(-100vw);
+}
+to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}}
+/* ---------------------- */
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+@keyframes fadeInRight {
+    from {
+    opacity: 0;
+    -webkit-transform: translateX(2.5rem);
+    transform: translateX(2.5rem);
+}
+to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}}
+
+.fastExit:nth-child(2) {  
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+        -webkit-animation-name: fastExit;
+  animation-name: fastExit;
+    transform-origin:bottom;
+}
+
+@keyframes fastExit {
+   0% {
+}
+ 
+  25% {
+    transform:scale(1, .2)
+  }
+
+50% {
+    transform:scale(1, .2) translatex(100vw);
+    opacity:1;
+  }
+ 
+  99% {
+    transform:scale(1, 0) translatex(0);
+    opacity:0;}
+
+}
+
+.highlightText:nth-child(odd){  
+    padding:0 10px;
+    background: linear-gradient(to right, #575757 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    -webkit-animation-name: hilight;
+    animation-name: hilight;
+
+}
+
+@keyframes hilight{
+0% {
+}
+100% {
+    background-position: left bottom;
+}
+
+}
+
+
+
+/* Call to action button on index page */
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

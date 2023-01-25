@@ -1,0 +1,234 @@
+
+nav {
+    position: fixed;
+    top: 60px;
+    right: 1rem;
+    z-index: 99;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+nav.scroll {
+    top: 0;
+}
+
+nav > ul  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30vh 20vw 0 0; 
+    background:black;
+    width: 100%;
+    height: 100vh;
+    list-style-type: none;
+    display: flex;
+    /* not shure I want to use the 'classic' nav layout on mobile */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(110%);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav > ul.open {
+    transform: translateX(0%);
+    
+}
+
+nav > ul > li {
+    position: relative;
+    width: 100px;
+    margin: 1rem 0;
+    padding: 1vmin 2vmin;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.nav_item::after,
+.submenu_item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 0%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+nav > ul > .nav_item > .nav_item_link,
+.submenu_item_link {
+    font-family: var(--font-primary-light);
+    position: relative;
+   text-decoration: none;
+   text-transform: capitalize;
+   color: #fafaea;
+   font-size: clamp(1rem, 1.25vw, 1.2rem);
+}
+
+nav > ul > li:hover > a {
+   color: #121212;
+}
+
+/* 
+.submenu_item:hover,
+.nav_item:hover {
+    background-color: #fafafa;
+}
+ */
+
+.nav_item:hover .nav_item_link {
+    color: rgb(33, 33, 33);
+}
+
+.submenu_item:hover .submenu_item_link {
+    color: #121212;
+}
+
+.nav_item > .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+
+.nav_item > .submenu.active {
+    display: flex;
+} 
+
+
+.submenu_item {
+    padding: 0.5rem 1rem;
+    position: relative;
+    background: #121212;
+    min-width: 100px;
+    max-width: 300px;
+    list-style: none;    
+    cursor: pointer;
+}
+
+
+.nav_item:hover::after,
+.nav_item:active::after,  
+.submenu_item:hover::after,
+.submenu_item:active::after {    
+    width: 100%;
+    background-color: #ededed;
+}
+
+.nav_item:hover .nav_item_link,
+.nav_item:active .nav_item_link,   
+.submenu_item:hover .submenu_item_link,
+.submenu_item:active .submenu_item_link {    
+    z-index: 10;
+   color: #181818;
+}
+/* New social icons in nav */
+
+
+.nav_socials {
+    width: 100%;
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    place-content: center;
+    z-index: 100;
+  }
+  
+  .nav_socials .social {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: unset;
+    transition: all .3s ease-in-out 0s;
+    z-index: 99;
+  }
+
+  .nav_socials .social form button {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .nav_socials .social .soc-item {
+    margin: 0.75rem 1rem;
+  }
+  
+  .nav_socials .social .soc-icon {
+    z-index: 20;
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
+    font-size: 2rem;
+    padding: 0.25rem;
+    transition: all .3s ease-in-out;  
+  }
+  
+  
+  
+  .nav_socials .social .soc-item:hover {
+    color: white;
+    filter: drop-shadow(0px 2px 4px rgb(0, 0, 0));
+    transform: scale(1);
+  }
+  
+
+@media (480px < width < 768px) {
+    nav {
+        right: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    nav {
+        right: 0;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        border-radius: 0%;
+    }
+    nav > ul {
+        position: relative; 
+        width: 100%;
+        height: 100%;
+        margin: 0 0 0 auto;
+        padding: 0 1rem 0 0;
+        transform: translateX(0%);
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav > ul > li {
+        margin: 0 1rem 0 0;
+        padding: 0.5rem 1rem;
+        width: 100px;
+    }
+    
+    .nav_item > .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav_item > .submenu.active {
+        display: flex;
+    } 
+
+    .nav_socials {
+        visibility: hidden;
+    }
+}

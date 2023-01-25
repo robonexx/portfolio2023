@@ -1,0 +1,25 @@
+@font-face {
+  font-family: CaviarDreams;
+  src: url("../assets/fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+  font-family: CaviarDreamsBold;
+  src: url("../assets/fonts/Caviar_Dreams_Bold.ttf");
+}
+
+@font-face {
+  font-family: SourceProLight;
+  src: url("../assets/fonts/SourceSansPro-Light.otf");
+}
+
+@font-face {
+  font-family: SourcePro;
+  src: url("../assets/fonts/SourceSansPro-Regular.otf");
+}
+
+:root {
+  --font-primary: SourcePro;
+  --font-primary-light: SourceProLight;
+  --font-heading: CaviarDreams;
+}

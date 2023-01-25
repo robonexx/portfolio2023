@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d3412194f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/anime.min.js" defer></script>
+    <script src="./js/menu.js" defer></script>
+    <!-- <script src="./js/textanimations.js" defer></script> -->
+    <script src="./js/nameform.js" defer></script>
+    <script src="./js/info_card.js" defer></script>
+    <script src="./js/createDynamicNav.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>[kɹiːˌe͡ɪtˈɪvɪti]</title>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h3>[kri ːeɪ ˈtɪvɪti]</h3>
+        </a>
+        <svg class="accent_image coffee_cup" version="1.1" x="0px" y="0px" viewBox="0 0 200 200">
+            <path class="line1" fill="#444444" d="M81.4,78.7c-1.5,0-2.8-1.2-2.8-2.8v-11c0-1.5,1.2-2.8,2.8-2.8c1.5,0,2.8,1.2,2.8,2.8v11
+                C84.2,77.5,82.9,78.7,81.4,78.7z" stroke="#f8f8f8" stroke-width="2px"></path>
+            <path class="line2" fill="#444444" d="M92.4,85.7c-1.5,0-2.8-1.2-2.8-2.8V60.9c0-1.5,1.2-2.8,2.8-2.8c1.5,0,2.8,1.2,2.8,2.8v22.1
+                C95.2,84.5,94,85.7,92.4,85.7z" stroke="#f8f8f8" stroke-width="2px">
+            </path>
+            <path class="line3" fill="#444444" d="M103.5,83.7c-1.5,0-2.8-1.2-2.8-2.8v-11c0-1.5,1.2-2.8,2.8-2.8c1.5,0,2.8,1.2,2.8,2.8v11
+                C106.2,82.4,105,83.7,103.5,83.7z" stroke="#f8f8f8" stroke-width="2px"></path>
+            <path fill="#444444" d="M134.2,91.2H59.3c-1.5,0-2.8,1.2-2.8,2.8c0,8.4,1.7,16.7,5,23.9c3.2,7.1,7.8,12.9,13.2,17
+                c0.5,0.4,1,0.5,1.6,0.5H64.8c-1.5,0-2.8,1.2-2.8,2.8c0,1.5,1.2,2.8,2.8,2.8H120c1.5,0,2.8-1.2,2.8-2.8c0-1.5-1.2-2.8-2.8-2.8h-11.6
+                c0.6,0,1.2-0.2,1.6-0.5c5-3.7,9.3-9,12.4-15.3h0.6c8.7,0,14-3.1,16.9-5.6c3.5-3.1,5.5-7.3,5.5-11.3
+                C145.6,96.3,140.4,91.2,134.2,91.2L134.2,91.2z M135.9,109.2c-1.9,1.7-5.2,3.6-10.7,4c1.7-5,2.7-10.3,3-15.8h6
+                c2.9,0,5.2,2.3,5.2,5.2C139.4,104.3,138.4,107,135.9,109.2L135.9,109.2z"></path>
+        </svg>
+    </header>
+    <nav class="nav">
+        <ul class="menu ">
+            <!--  <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/projects.html">Projects</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li> -->
+            <div class="nav_socials">
+                <div class="social">
+                    <form method="post" action="mailto:robert.wagar@edu.cmeducations.se">
+                        <button type="submit" class="btn_hack"><i
+                                class="fa-regular fa-envelope soc-item soc-icon"></i></button>
+                        </a>
+                    </form>
+                    <a href='https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/' target='_blank'
+                        rel='noreferrer noopener'>
+                        <i class="fa-brands fa-linkedin-in soc-item soc-icon"></i>
+                    </a>
+
+                    <a href='https://github.com/robonexx' target='_blank' rel='noreferrer'>
+                        <i class="fa-brands fa-github soc-item soc-icon"></i>
+                    </a>
+
+                    <a href='https://codepen.io/robonexx' target='_blank' rel='noreferrer'>
+                        <i class="fa-brands fa-codepen soc-item soc-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </ul>
+        <div class="hamburger_wrapper">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <div class="sidebar">
+        <div class="social">
+            <form method="post" action="mailto:robert.wagar@edu.cmeducations.se">
+                <button type="submit" class="btn_hack"><i class="fa-regular fa-envelope soc-item soc-icon"></i></button>
+                </a>
+            </form>
+            <a href='https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/' target='_blank'
+                rel='noreferrer noopener'>
+                <i class="fa-brands fa-linkedin-in soc-item soc-icon"></i>
+            </a>
+
+            <a href='https://github.com/robonexx' target='_blank' rel='noreferrer'>
+                <i class="fa-brands fa-github soc-item soc-icon"></i>
+            </a>
+
+            <a href='https://codepen.io/robonexx' target='_blank' rel='noreferrer'>
+                <i class="fa-brands fa-codepen soc-item soc-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h1 class="intro_head">[kri ːeɪ ˈtɪvɪti]</h1>
+        <h2 class="intro_subhead">
+            By Robert Wägar </br>
+        </h2>
+        <div class="loader">
+            <span>0</span>
+        </div>
+        <button id="enter_btn">Enter</button>
+    </div>
+
+    <main class="main">
+        <div class="hero">
+            <img class="img" src="./robIcon.png" alt="robert wagar">
+            <h4 class="hi">Hi there,</h4>
+            <h1 class="answer">I´m Robert,</h1>
+            <div class="hello">
+                <form class="input_form">
+                    <label for="input_name">What is your name?</label>
+                    <input type="text" name="input_name" class="input_name" placeholder="name">
+                    <input type="submit" class="submit_btn">
+                </form>
+                <!--  <p class="answer"></p> -->
+            </div>
+            <div class="call_to_action">
+                <a href="./#projects">
+                    <button class="c2a_btn btn">Check my work</button>
+                </a>
+
+            </div>
+        </div>
+
+        <h2></h2>
+        <section class="top">
+            <p>
+                I´m a developer with focus on creating smart
+                user interfaces & useful interactions
+                </br>
+                </br>
+                My design is equally about
+                what it does
+                as much as how it attracts the eye
+            </p>
+            <p class="second_text">
+                If you are looking for a developer to bring your ideas to life, You have come to the right place </br>
+                </br>
+                As a developer I'm focused on finding the best solutions for you problems/ needs
+                by developing rich web experiences & applications for your users
+                </br>
+            </p>
+        </section>
+
+        <div class="projects" id="projects">
+            <article>
+                <h2>Projects</h2>
+                <p>Here you can check some of the stuff I´ve worked on, some are stuff I just done as hobby and like and
+                    some are customer projects</p>
+            </article>
+            <section class="projects_wrapper">
+                <div id="lockerlegends" class="project">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card_header">
+                                <img class="card_img" src="./assets/images/ll_mockup.png" alt="">
+                                <h2 class="card_title">LockerLegends</h2>
+                                <span class="tech">Tech: Nextjs, Wordpress, Sass, Jsx, Framer-motion, GraphQL,
+                                    Siteground,
+                                    Vercel</span>
+                                <button class="card_more_info">Read more</button>
+                                <button class="card_less_info">Close info</button>
+                            </div>
+                            <div class="card_content">
+                                <p class="card_body">This website was re-made for Lockerlegends international, a website
+                                    owned
+                                    by an orignal soultrain dancer and locking pioneer James Higgins, aka "Skeeter
+                                    Rabbit"
+                                    from Los Angeles, USA </p>
+                                <div class="links">
+                                    <a href="https://github.com/robonexx/lockerlegends2022" target="_blank"
+                                        rel="noopener">Github</a>
+                                    <a href="https://lockerlegends.org/" target="_blank" rel="noopener">Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="vga" class="project">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card_header">
+                                <img class="card_img" src="./assets/images/vga_mockup.png" alt="">
+                                <h2 class="card_title">VGA</h2>
+                                <span class="tech">Tech: Js, Html, css, surge, figma</span>
+                                <button class="card_more_info">Read more</button>
+                                <button class="card_less_info">Close info</button>
+                            </div>
+                            <div class="card_content">
+                                <p class="card_body">VGA is a video game search enngine and movie search engine, used
+                                    rawg.io and themoviedb api:s to fetch the data</p>
+                                <div class="links">
+                                    <a href="https://github.com/robonexx/vga2023" target="_blank"
+                                        rel="noopener">Github</a>
+                                    <a href="https://vga2023.surge.sh" target="_blank" rel="noopener">Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="quotes" class="project">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card_header">
+                                <img class="card_img" src="./assets/images/rogerroger.png" alt="">
+                                <h2 class="card_title">Quotes by Roger</h2>
+                                <span class="tech">Tech: Js, Html, css, surge, figma, anime.js</span>
+                                <button class="card_more_info">Read more</button>
+                                <button class="card_less_info">Close info</button>
+                            </div>
+                            <div class="card_content">
+                                <p class="card_body">A quotes website for people who need funny or uplifting quotes for
+                                    the
+                                    day :D</p>
+                                <div class="links">
+                                    <a href="https://github.com/xxrobone/dailyquotes" target="_blank"
+                                        rel="noopener">Github</a>
+                                    <a href="https://quotesbyroger.surge.sh" target="_blank" rel="noopener">Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sl-app" class="project">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card_header">
+                                <img class="card_img" src="./assets/images/sl_bike.png" alt="">
+                                <h2 class="card_title">SL app (prototype)</h2>
+                                <span class="tech">Tech: React, react-router-dom, mapbox-gl, framer-motion, scss,
+                                    react-icons,
+                                    styled-components, json-server, localstorage</span>
+                                <button class="card_more_info">Read more</button>
+                                <button class="card_less_info">Close info</button>
+                            </div>
+                            <div class="card_content">
+                                <p class="card_body">This was a project implementing ux design to a frontend prototype.
+                                    To
+                                    help a already existing company & to make them more eco-friendly</p>
+                                <div class="links">
+                                    <a href="https://github.com/robonexx/sl_app_ux_implementation" target="_blank"
+                                        rel="noopener">Github</a>
+                                    <a href="https://slappmap.surge.sh" target="_blank" rel="noopener">Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <h4>&#9426; ROB - ONE - 2022</h4>
+    </footer>
+</body>
+
+</html>

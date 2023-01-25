@@ -1,0 +1,11 @@
+# ignore all folder with
+
+/api_keys
+/js/firebase.js
+
+# and files containg my keys
+
+*.env
+*keys.js
+
+*firebase.js

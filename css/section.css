@@ -1,0 +1,61 @@
+
+section {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem 0;
+    height:calc(fit-content + 10vh);
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    /* text-align: justify; */
+}
+
+  section:nth-child(even) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  section > h2:first-of-type {
+    color: rgb(32, 32, 32);
+    font-weight: 400;
+  }
+
+/* section > h2:first-of-type:before {
+  content: "DEVELOPER";
+  position: absolute;
+  top: 6%;
+  opacity: 1;
+  color: #414141;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+  z-index: 100;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+section > h2:first-child:after {
+  content: "DANCER";
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  top: 16%;
+  right: 1%;
+  opacity: 0.6;
+  color: #1f292b;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  z-index: -1;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+} */
+
+@media (min-width: 980px) {
+  section {
+    height:calc(fit-content + 5vh);
+  }
+
+  section.top {
+    margin-bottom: 5rem;
+  }
+}

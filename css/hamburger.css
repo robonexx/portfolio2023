@@ -1,0 +1,82 @@
+  /* ========== HAMBURGER NAV BUTTON ====================== */
+  .hamburger_wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
+  }
+  
+  .hamburger {    
+    position: relative;   
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.hamburger span {
+    width: 1.5rem;
+    height: .1rem;
+    background-color: var(--color-primary);
+    margin-bottom: .5rem;
+    transition: all 500ms ease;
+    position: absolute;
+}
+
+.hamburger span:nth-child(1) {
+    left: 0.75rem;
+    top: 1rem;
+}
+
+.hamburger span:nth-child(2) {
+    left: 0.75rem;
+    top: 1.5rem;
+}
+
+
+.hamburger span:nth-child(2):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 100%;
+    background-color: var(--color-primary);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.hamburger span:nth-child(3) {
+    right: 0.75rem;
+    top: 2rem;
+}
+
+.hamburger.active span:nth-child(1),
+.hamburger.active span:nth-child(3) {
+    width: 0;
+    background-color: #888;
+}
+
+.hamburger.active span:nth-child(2) {
+    transform: rotate(-45deg);
+    background-color: #888;
+}
+
+.hamburger.active span:nth-child(2):after {
+    transform: rotate(90deg);
+    background-color: #888;
+}
+      
+ 
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+  }
+}
+

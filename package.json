@@ -1,0 +1,19 @@
+{
+  "name": "assignment5",
+  "version": "1.0.0",
+  "description": "assigntment 5 portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxrobone/assignment5.git"
+  },
+  "author": "Robert Wägar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxrobone/assignment5/issues"
+  },
+  "homepage": "https://github.com/xxrobone/assignment5#readme"
+}

@@ -1,0 +1,69 @@
+
+.btn {
+    margin-top: auto;
+    padding: .5rem 1rem;
+    border: 0;
+    font-weight: 300;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-secondary);
+    font-size: .8rem;    
+    transition: transform 500ms ease-out,
+    background 200ms ease-out;
+    z-index: 3;
+  }
+  
+  .btn:hover,
+  .btn:active {
+    outline: none;
+    background: rgb(189, 189, 189);
+    color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.278);
+  }
+
+  /* call to action on index page */
+
+  
+  .c2a_btn:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #9d999e, #0f0f10, #777578, #e1e7e6, #141414, #393739, #838285, #edebec, #050505);    
+    background-size: 400%;  
+    filter: blur(2px);    
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    z-index: -1;
+}
+
+.c2a_btn:hover {
+  color: white;
+}
+
+.c2a_btn:hover:before {
+    opacity: 1;
+}
+
+
+.c2a_btn:after {   
+    content: '';
+    position: absolute;    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;    
+    background: #111;
+    z-index: -1;
+}
+
+.btn_hack {
+  outline: none;
+  border: none;
+}

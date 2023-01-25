@@ -1,0 +1,72 @@
+.accent_image {
+    position: relative;
+    height: 60px;
+    width: 60px;
+}
+
+.coffee_cup .line1 {
+    stroke-dasharray: 39.602;
+    stroke-dashoffset: 39.602;
+    animation: line1 3s ease-in-out forwards infinite;
+    animation-duration: 0;
+    fill: #f8f8f8;
+}
+
+.coffee_cup .line3 {
+    stroke-dasharray: 39.552;
+    stroke-dashoffset: 39.552;
+    animation: line3 3s ease-in-out forwards infinite;
+    animation-delay: 0.4s;
+    fill: #f8f8f8;
+}
+
+.coffee_cup .line2 {
+    stroke-dasharray: 61.636;
+    stroke-dashoffset: 61.636;
+    animation: line2 3s ease-in-out forwards infinite;
+    animation-delay: 0.2s;
+    fill: #f8f8f8;
+}
+
+@keyframes line1 {
+    0% {
+      /* stroke-dashoffset: 39.602; */
+      fill: transparent;
+    }
+    50% {
+     /*  stroke-dashoffset: 0; */
+      fill: #505050dc;
+      
+    }
+    100% {
+        fill: transparent;
+    }
+  }
+@keyframes line2 {
+    0% {
+      /* stroke-dashoffset: 61.636; */
+      fill: transparent;
+    }
+    50% {
+        /* stroke-dashoffset: 0; */
+        fill: #4b4b4b86;
+        
+      }
+    100% {
+      fill: transparent;
+    }
+  }
+@keyframes line3 {
+    0% {
+      /* stroke-dashoffset: 39.552; */
+      fill: transparent;
+    }
+    50% {
+        /* stroke-dashoffset: 0; */
+        fill: #4d4d4db2;
+        
+      }
+    100% {
+      fill: transparent;
+    }
+  }
