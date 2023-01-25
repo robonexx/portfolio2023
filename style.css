@@ -124,16 +124,13 @@ h4 {
 }
 
 .hello {
-    padding: 0;
-    position: absolute;
-    bottom: 30vh;
+    max-width: 60%;
 }
 
 
 .call_to_action {
-    position: absolute;
-    right: 5vw;
-    bottom: 10vh;
+    position: relative;
+    max-width: 60%;
   }
 
 .projects {
@@ -215,21 +212,11 @@ article h2 {
         width: 55%;
     }
     
-    .call_to_action {
-        position: absolute;
-        right: 5vw;
-        bottom: 10vh;
+    .call_to_action,
+    .hello {
+       max-width: 40%;
     }
 
-    
-    .hi {
-        position: absolute;
-        bottom: 35vh;
-    }
-    .answer {
-        position: absolute;
-        bottom: 25vh;
-    }
 }
 
 
@@ -243,24 +230,23 @@ article h2 {
         max-width: 65%;
     }
 
-         
-.hello {
-    padding: 0;
-    position: absolute;
-    bottom: 10vh;
-}
+ 
+    .call_to_action,
+    .hello {
+       max-width: 50%;
+    }
 }
 
 
 @media (550px < width < 767px) {
   
-    .call_to_action {
+  /*   .call_to_action {
       position: absolute;
       right: 5vw;
       bottom: 2vh;
-    }
+    } */
 
-    .hi {
+  /*   .hi {
         position: absolute;
         bottom: 35vh;
     }
@@ -273,14 +259,14 @@ article h2 {
     padding: 0;
     position: absolute;
     bottom: 10vh;
-}
+} */
 }
       
       
 
 @media (400px < width < 599px) {
   
-    .call_to_action {
+   /*  .call_to_action {
         position: absolute;
         right: 5vw;
         bottom: 50vh;
@@ -291,6 +277,6 @@ article h2 {
     padding: 0;
     position: absolute;
     bottom: 20vh;
-}
+} */
 }
       
