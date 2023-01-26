@@ -72,3 +72,10 @@
   outline: none;
   border: none;
 }
+
+
+@media screen and (width: 375px) and (height: 677px) {
+  .btn {
+    padding: 0.25rem 0.75rem
+  }
+}

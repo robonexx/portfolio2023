@@ -149,3 +149,35 @@
   form > input[type="submit"]:hover {
     background-color: #555;
   }
+
+   
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2)
+{
+    
+#contact h1 {
+  position: absolute;
+  top: 25vh;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px 1px black;
+}
+
+.contact_page_icons {
+  width: 80%;
+  position: absolute;
+  top: 45vh;
+  z-index: 50;
+  display: grid;
+  place-content: center;
+ overflow: unset; 
+}
+
+.contact_page_icons .social .soc-icon {
+   font-size: 1.5rem;
+  
+}
+
+}

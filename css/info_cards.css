@@ -250,6 +250,20 @@
     }
   }
 
-  
+   
+/* Iphone se media qs */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2)
+{  
+.tech {
+  font-size: 0.8rem;
+}
+.card_content p {
+  font-size: 0.6rem;
+}
+}
 
   

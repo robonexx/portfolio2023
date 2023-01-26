@@ -237,46 +237,35 @@ article h2 {
     }
 }
 
+     
+/* iphone se media Qs */
 
-@media (550px < width < 767px) {
-  
-  /*   .call_to_action {
-      position: absolute;
-      right: 5vw;
-      bottom: 2vh;
-    } */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+                    only screen and (min--moz-device-pixel-ratio: 2),
+                    only screen and (-o-min-device-pixel-ratio: 2/1),
+                    only screen and (min-device-pixel-ratio: 2)
+{  
 
-  /*   .hi {
-        position: absolute;
-        bottom: 35vh;
+    body {
+        min-height: 100vh;
     }
-    .answer {
-        position: absolute;
-        bottom: 30vh;
+    main {
+        width: 95%;
+        height: 100%;
     }
-       
-.hello {
-    padding: 0;
-    position: absolute;
-    bottom: 10vh;
-} */
-}
-      
-      
 
-@media (400px < width < 599px) {
-  
-   /*  .call_to_action {
-        position: absolute;
-        right: 5vw;
-        bottom: 50vh;
-        transform: rotate(-90deg) scale(-1);
-      }
-    
-.hello {
-    padding: 0;
-    position: absolute;
-    bottom: 20vh;
-} */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p,h4 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .hero > img {
+        width: 60%;
+    }
+
 }
-      
+     
