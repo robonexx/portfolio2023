@@ -101,7 +101,7 @@ function createNav(navArr) {
           submenu_item_link.textContent = j.subtitle;
           /*  submenu_item_link.href = `./${j.subtitle}.html`; */
           /* changing this in my project cause its not supposed to link to an other page moving project to main page */
-          submenu_item_link.href = `index.html#${j.subtitle}`;
+          submenu_item_link.href = `/index.html#${j.subtitle}`;
           submenu_item.append(submenu_item_link);
           submenu.append(submenu_item);
           li.append(a, submenu);
