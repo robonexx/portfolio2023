@@ -101,7 +101,7 @@ function createNav(navArr) {
           submenu_item_link.textContent = j.subtitle;
           /*  submenu_item_link.href = `./${j.subtitle}.html`; */
           /* changing this in my project cause its not supposed to link to an other page moving project to main page */
-          submenu_item_link.href = `#${j.subtitle}`;
+          submenu_item_link.href = `index.html#${j.subtitle}`;
           submenu_item.append(submenu_item_link);
           submenu.append(submenu_item);
           li.append(a, submenu);
@@ -132,15 +132,16 @@ let links = [...document.querySelectorAll('.nav_item')];
 let submenuLinks = [...document.querySelectorAll('.submenu_item')];
 links.forEach((l) => {
   l.addEventListener('mouseenter', (e) => {
-    console.log(e.target.childNodes[1].className);
-    if (!e.target.childNodes[1].className === 'submenu') {
+    /* console.log(e.target.childNodes[1].className); */
+    if (!document.querySelectorAll('.nav_item .submenu').length > 0) {
     } else {
       document.querySelector('.submenu').classList.add('active');
     }
   });
 
   l.addEventListener('mouseleave', (e) => {
-    if (!e.target.childNodes[1].className === 'submenu') {
+    if (!document.querySelectorAll('.nav_item .submenu').length > 0) {
+      /* !e.target.childNodes[1].className === 'submenu' */
     } else {
       document.querySelector('.submenu').classList.remove('active');
     }

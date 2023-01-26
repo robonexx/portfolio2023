@@ -15,6 +15,11 @@ header {
     pointer-events: none;
 }
 
+header.header_bg {
+    transition: background 0.1s ease;
+    background-color: var(--color-secondary);
+}
+
 header > a {
     position: relative;
     text-decoration: none;
@@ -28,10 +33,9 @@ header > a > h3 {
     font-family: var(--font-heading);
     font-size: clamp(1.4rem, 3vw, 2rem); 
     line-height: 1;
-    color: #181818;
+    color: var(--color-primary);
     font-weight: 100;
 }
-
 
 @keyframes headerIntro {
     from {

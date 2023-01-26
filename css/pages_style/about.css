@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-#about > header > a > h3 {
-    color: white;
-}
-
 #about main {
     margin-top: 100vh;
     position: relative;
@@ -52,8 +48,7 @@
 .about_hero {
     width: 78%;
     left: 50%;
-    transform: translateX(-50%);
-    
+    transform: translateX(-50%);    
 }
 }
 

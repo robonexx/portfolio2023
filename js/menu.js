@@ -17,9 +17,9 @@ menuBtn.addEventListener('click', () => {
   }); */
 });
 
-document.querySelector('header');
-
+const header = document.querySelector('header');
 let head = document.querySelector('header > a > h3');
+let coffee = [...document.querySelectorAll('.coffee_cup > path')];
 
 if (window.innerWidth > 768) {
   var prevScrollpos = window.pageYOffset;
@@ -28,13 +28,23 @@ if (window.innerWidth > 768) {
     if (prevScrollpos > currentScrollpos) {
       let nav = document.querySelector('nav');
       nav.style.top = '60px';
-      document.querySelector('header').classList.remove('border');
-      head.style.color = '#181818';
+      nav.classList.remove('border');
+      head.style.color = '#121212';
+      header.classList.add('header_bg');
+      coffee.forEach((c) => {
+        c.style.fill = '#181818';
+        c.style.stroke = '#181818';
+      });
     } else {
       let nav = document.querySelector('nav');
       nav.style.top = '0px';
-      document.querySelector('header').classList.add('border');
+      nav.classList.add('border');
       head.style.color = '#fafafa';
+      header.classList.remove('header_bg');
+      coffee.forEach((c) => {
+        c.style.fill = '#fafafa';
+        c.style.stroke = '#ededed';
+      });
     }
 
     prevScrollpos = currentScrollpos;

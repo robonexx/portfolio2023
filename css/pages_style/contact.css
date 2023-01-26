@@ -20,10 +20,6 @@
   z-index: -1;
 }
 
-#contact > header > a > h3 {
-    color: white !important; 
-    text-shadow: 1px 1px 1px black ;
-}
 
 #contact h1 {
   position: absolute;
@@ -41,15 +37,15 @@
 
 #contact > main {
     margin: 120px auto 0;
+    width: 90%;
+    height: 100vh;   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 90%;
     /* background-color: #000000; */
-    background-color: transparent;
     color: white;
+    background-color: transparent;    
 }
 
 .contact_page_icons {
@@ -64,30 +60,39 @@
 
 .contact_page_icons .social {
   padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  height: fit-content;
   position: relative;
   display: flex;
-  background-color: var(--color-bg);
-  height: fit-content;
+  border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25), inset 0 0 1px 0px rgba(207, 207, 207, 0.649);   
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   transition: all .3s ease-in-out 0s;
-  filter: drop-shadow(1´0px 1px 2px rgba(39, 39, 39, 0.425)); 
+  filter: drop-shadow(1px 1px 2px rgba(39, 39, 39, 0.425)); 
   z-index: 99;
 }
 
 .contact_page_icons .social .soc-item {
-  margin: 0.75rem 1rem;
+  margin: 0.5rem 1rem;
+}
+
+.contact_page_icons .social form .btn_hack {
+  background-color: transparent;
 }
 
 .contact_page_icons .social .soc-icon {
   z-index: 20;
-  color: #070707;
+  color: var(--color-secondary);
   font-size: 2rem;
   padding: 0.25rem;
   transition: all .3s ease-in-out;  
 }
 
-
 .contact_page_icons .social .soc-item:hover {
-  color: white;
+  color: #888;
   filter: drop-shadow(0px 2px 4px rgba(17, 17, 17, 0.432));
   transform: scale(1.15);
 }
@@ -150,7 +155,7 @@
     background-color: #555;
   }
 
-   
+  
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),

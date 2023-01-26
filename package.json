@@ -1,19 +1,19 @@
 {
-  "name": "assignment5",
+  "name": "portfolio2023",
   "version": "1.0.0",
-  "description": "assigntment 5 portfolio",
+  "description": "My new portfolio 2023",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xxrobone/assignment5.git"
+    "url": "git+https://github.com/xxrobone/portfolio2023.git"
   },
   "author": "Robert Wägar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xxrobone/assignment5/issues"
+    "url": "https://github.com/xxrobone/portfolio2023/issues"
   },
-  "homepage": "https://github.com/xxrobone/assignment5#readme"
+  "homepage": "https://github.com/xxrobone/portfolio2023#readme"
 }

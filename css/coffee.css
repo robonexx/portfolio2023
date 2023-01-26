@@ -4,12 +4,19 @@
     width: 60px;
 }
 
+.coffee_cup path {
+  fill: #cfcfcf;
+  stroke: rgb(46, 46, 46);
+  stroke-width: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
 .coffee_cup .line1 {
     stroke-dasharray: 39.602;
     stroke-dashoffset: 39.602;
     animation: line1 3s ease-in-out forwards infinite;
     animation-duration: 0;
-    fill: #f8f8f8;
+   
 }
 
 .coffee_cup .line3 {
@@ -17,7 +24,7 @@
     stroke-dashoffset: 39.552;
     animation: line3 3s ease-in-out forwards infinite;
     animation-delay: 0.4s;
-    fill: #f8f8f8;
+    
 }
 
 .coffee_cup .line2 {
@@ -25,8 +32,9 @@
     stroke-dashoffset: 61.636;
     animation: line2 3s ease-in-out forwards infinite;
     animation-delay: 0.2s;
-    fill: #f8f8f8;
+   
 }
+
 
 @keyframes line1 {
     0% {

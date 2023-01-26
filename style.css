@@ -235,9 +235,8 @@ article h2 {
     .hello {
        max-width: 50%;
     }
-}
-
-     
+}   
+      
 /* iphone se media Qs */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -268,4 +267,4 @@ article h2 {
     }
 
 }
-     
+      
