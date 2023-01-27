@@ -1,8 +1,10 @@
+
 @import url('../info_cards.css');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
   }
 
   main {
+    background: -o-linear-gradient(330deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
     background: linear-gradient(120deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
   }
 
@@ -43,9 +46,11 @@ body {
   }
 
   .projects_wrapper {
+    display: -ms-grid;
     display: grid;
     gap: 1rem;
    /*  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
   }
   
@@ -68,5 +73,6 @@ body {
 
     .projects_wrapper { 
       width: 100%;
+      -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr); }
   }

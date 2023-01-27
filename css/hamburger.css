@@ -1,5 +1,5 @@
-  /* ========== HAMBURGER NAV BUTTON ====================== */
-  .hamburger_wrapper {
+/* ========== HAMBURGER NAV BUTTON ====================== */
+.hamburger_wrapper {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -7,7 +7,8 @@
     left: auto;
     background-color: white;
     border-radius: 50%;
-    filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
+            filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
   }
   
   .hamburger {    
@@ -25,6 +26,8 @@
     height: .1rem;
     background-color: var(--color-primary);
     margin-bottom: .5rem;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
     transition: all 500ms ease;
     position: absolute;
 }
@@ -48,6 +51,8 @@
     width: 1.5rem;
     height: 100%;
     background-color: var(--color-primary);
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
@@ -64,12 +69,16 @@
 }
 
 .hamburger.active span:nth-child(2) {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     background-color: #888;
 }
 
 .hamburger.active span:nth-child(2):after {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
     background-color: #888;
 }
       
@@ -79,4 +88,3 @@
       display: none;
   }
 }
-

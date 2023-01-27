@@ -1,80 +1,133 @@
+
 .accent_image {
-    position: relative;
-    height: 60px;
-    width: 60px;
+  position: relative;
+  height: 60px;
+  width: 60px;
 }
 
 .coffee_cup path {
-  fill: #cfcfcf;
-  stroke: rgb(46, 46, 46);
-  stroke-width: 4px;
-  transition: all 0.3s ease-in-out;
+fill: #cfcfcf;
+stroke: rgb(46, 46, 46);
+stroke-width: 4px;
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
 }
 
 .coffee_cup .line1 {
-    stroke-dasharray: 39.602;
-    stroke-dashoffset: 39.602;
-    animation: line1 3s ease-in-out forwards infinite;
-    animation-duration: 0;
-   
+  stroke-dasharray: 39.602;
+  stroke-dashoffset: 39.602;
+  -webkit-animation: line1 3s ease-in-out forwards infinite;
+          animation: line1 3s ease-in-out forwards infinite;
+  -webkit-animation-duration: 0;
+          animation-duration: 0;
+ 
 }
 
 .coffee_cup .line3 {
-    stroke-dasharray: 39.552;
-    stroke-dashoffset: 39.552;
-    animation: line3 3s ease-in-out forwards infinite;
-    animation-delay: 0.4s;
-    
+  stroke-dasharray: 39.552;
+  stroke-dashoffset: 39.552;
+  -webkit-animation: line3 3s ease-in-out forwards infinite;
+          animation: line3 3s ease-in-out forwards infinite;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  
 }
 
 .coffee_cup .line2 {
-    stroke-dasharray: 61.636;
-    stroke-dashoffset: 61.636;
-    animation: line2 3s ease-in-out forwards infinite;
-    animation-delay: 0.2s;
-   
+  stroke-dasharray: 61.636;
+  stroke-dashoffset: 61.636;
+  -webkit-animation: line2 3s ease-in-out forwards infinite;
+          animation: line2 3s ease-in-out forwards infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+ 
+}
+
+
+@-webkit-keyframes line1 {
+  0% {
+    /* stroke-dashoffset: 39.602; */
+    fill: transparent;
+  }
+  50% {
+   /*  stroke-dashoffset: 0; */
+    fill: #505050dc;
+    
+  }
+  100% {
+      fill: transparent;
+  }
 }
 
 
 @keyframes line1 {
-    0% {
-      /* stroke-dashoffset: 39.602; */
+  0% {
+    /* stroke-dashoffset: 39.602; */
+    fill: transparent;
+  }
+  50% {
+   /*  stroke-dashoffset: 0; */
+    fill: #505050dc;
+    
+  }
+  100% {
       fill: transparent;
-    }
-    50% {
-     /*  stroke-dashoffset: 0; */
-      fill: #505050dc;
+  }
+}
+@-webkit-keyframes line2 {
+  0% {
+    /* stroke-dashoffset: 61.636; */
+    fill: transparent;
+  }
+  50% {
+      /* stroke-dashoffset: 0; */
+      fill: #4b4b4b86;
       
     }
-    100% {
-        fill: transparent;
-    }
+  100% {
+    fill: transparent;
   }
+}
 @keyframes line2 {
-    0% {
-      /* stroke-dashoffset: 61.636; */
-      fill: transparent;
-    }
-    50% {
-        /* stroke-dashoffset: 0; */
-        fill: #4b4b4b86;
-        
-      }
-    100% {
-      fill: transparent;
-    }
+  0% {
+    /* stroke-dashoffset: 61.636; */
+    fill: transparent;
   }
+  50% {
+      /* stroke-dashoffset: 0; */
+      fill: #4b4b4b86;
+      
+    }
+  100% {
+    fill: transparent;
+  }
+}
+@-webkit-keyframes line3 {
+  0% {
+    /* stroke-dashoffset: 39.552; */
+    fill: transparent;
+  }
+  50% {
+      /* stroke-dashoffset: 0; */
+      fill: #4d4d4db2;
+      
+    }
+  100% {
+    fill: transparent;
+  }
+}
 @keyframes line3 {
-    0% {
-      /* stroke-dashoffset: 39.552; */
-      fill: transparent;
-    }
-    50% {
-        /* stroke-dashoffset: 0; */
-        fill: #4d4d4db2;
-        
-      }
-    100% {
-      fill: transparent;
-    }
+  0% {
+    /* stroke-dashoffset: 39.552; */
+    fill: transparent;
   }
+  50% {
+      /* stroke-dashoffset: 0; */
+      fill: #4d4d4db2;
+      
+    }
+  100% {
+    fill: transparent;
+  }
+}

@@ -1,3 +1,4 @@
+
 .logo {
   margin-left: 2rem;
     position: absolute;
@@ -5,46 +6,15 @@
     left: 0;    
     height: 125px;
     width: 125px;    
-    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;    
+         -o-transition-delay: 0.5s;    
+            transition-delay: 0.5s;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
-    perspective: 30em;
+    -webkit-perspective: 30em;
+            perspective: 30em;
     z-index: 20;
-  }
-
-  .card {
-    width:100%;
-    height:100%;
-    position:relative;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-  }
-  
-  .face {
-    width:100%;
-    height:100%;
-    color:#FFF;
-    text-align:center;
-    position:absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility:hidden;
-    
-  }
-  
-  .front {
-    background-image: url(../assets/images/rob1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .back {
-    background: black;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: white;
-    transform: rotateY(180deg);
-  }
-  .logo:hover .card {
-    transform: rotateY(180deg);
   }
 
   @media screen and (max-width: 768px) { 
