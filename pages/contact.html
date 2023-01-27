@@ -6,25 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d3412194f0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/pages_style/contact.css">
-    <link rel="stylesheet" href="../style.css">
-    <script src="../js/menu.js" type="module" defer></script>
-    <script src="../js/submenuHover.js" type="module" defer></script>
+    <link rel="stylesheet" href="/css/pages_style/contact.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/js/anime.min.js" defer></script>
+    <script src="/js/menu.js" type="module" defer></script>
+    <script src="/js/submenuHover.js" type="module" defer></script>
+    <script src="/js/contact.js" defer type="module"></script>
     <title>[kɹiːˌe͡ɪtˈɪvɪti] - contact</title>
 </head>
 
 <body id="contact">
     <div class="contact_bg"></div>
     <header>
-        <a href="../index.html">
+        <a href="/index.html">
             <h3>[kri ːeɪ ˈtɪvɪti]</h3>
         </a>
     </header>
     <nav class="nav">
         <ul class="menu ">
-            <li class="nav_item"><a href="../index.html" class="nav_item_link">Home</a></li>
-            <li class="nav_item"><a href="./about.html" class="nav_item_link">About</a></li>
-            <li class="nav_item"><a href="../index.html#projects" class="nav_item_link">Projects</a>
+            <li class="nav_item"><a href="/index.html" class="nav_item_link">Home</a></li>
+            <li class="nav_item"><a href="/about.html" class="nav_item_link">About</a></li>
+            <li class="nav_item"><a href="/index.html#projects" class="nav_item_link">Projects</a>
                 <ul class="submenu">
                     <li class="submenu_item"><a class="submenu_item_link"
                             href="/index.html#lockerlegends">lockerlegends</a></li>
@@ -33,10 +35,10 @@
                     <li class="submenu_item"><a class="submenu_item_link" href="/index.html#sl-app">sl-app</a></li>
                 </ul>
             </li>
-            <li class="nav_item"><a href="./contact.html" class="nav_item_link">Contact</a></li>
-            <div class="nav_socials">
+            <li class="nav_item"><a href="/contact.html" class="nav_item_link">Contact</a></li>
+            <li class="nav_socials">
                 <div class="social">
-                    <form method="post" action="mailto:robert.wagar@edu.cmeducations.se">
+                    <form method="post" action="mailto:robert.wagar@gmail.com">
                         <button type="submit" class="btn_hack"><i
                                 class="fa-regular fa-envelope soc-item soc-icon"></i></button>
                         </a>
@@ -54,7 +56,7 @@
                         <i class="fa-brands fa-codepen soc-item soc-icon"></i>
                     </a>
                 </div>
-            </div>
+            </li>
         </ul>
         <div class="hamburger_wrapper">
             <div class="hamburger" id="hamburger">
@@ -64,45 +66,77 @@
             </div>
         </div>
     </nav>
-    <main>
-        <h1>CONTACT</h1>
-        <h2>robertwagar@gmail.com</h2>
-        <!-- I just saved the form so CME can see it -->
-        <!--  <form method="post" action="mailto:robert.wagar@edu.cmeducations.se">
-            <i class="fa-solid fa-envelope"></i>
-            <input type="text" id="name" placeholder="Name (required)" required>
-            <input type="email" id="email" placeholder="Email (required)" required>
-            <input type="text" id="subject" placeholder="Subject (required)" required>
-            <textarea placeholder="Message (required)" required></textarea>
-            <input type="submit" value="Send">
-        </form> -->
-        <div class="contact_page_icons">
-            <div class="social">
-                <form method="post" action="mailto:robert.wagar@edu.cmeducations.se">
-                    <button type="submit" class="btn_hack"><i
-                            class="fa-regular fa-envelope soc-item soc-icon"></i></button>
-                    </a>
-                </form>
-                <a href='https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/' target='_blank'
-                    rel='noreferrer noopener'>
-                    <i class="fa-brands fa-linkedin-in soc-item soc-icon"></i>
-                </a>
 
-                <a href='https://github.com/robonexx' target='_blank' rel='noreferrer'>
-                    <i class="fa-brands fa-github soc-item soc-icon"></i>
-                </a>
 
-                <a href='https://codepen.io/robonexx' target='_blank' rel='noreferrer'>
-                    <i class="fa-brands fa-codepen soc-item soc-icon"></i>
-                </a>
+    <div class="container">
+        <div class="contact_sidebar">
+            <!-- <i class="fa-regular fa-envelope mail_btn"></i> -->
+            <div class="mail_btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20 4H4C2.89543 4 2 4.89543 2 6V18C2 19.1046 2.89543 20 4 20H20C21.1046 20 22 19.1046 22 18V6C22 4.89543 21.1046 4 20 4Z"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
             </div>
         </div>
-    </main>
+        <div class="icons">
+            <span class="icon first"></span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="inner">
+        </div>
+        <div class='contact_form_wrapper'>
+            <div class='contact_info_container'>
+                <h2 class='headline_text'>Contact</h2>
+                <div class='contact_info'>
+                    <span class='email'>robertwagar@gmail.com</span>
+                </div>
+                <div class='socials'>
+                    <a href='https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/' target='_blank'
+                        rel='noreferrer noopener'>
+                        <i class="fa-brands fa-linkedin-in soc-item soc-icon"></i>
+                    </a>
+
+                    <a href='https://github.com/robonexx' target='_blank' rel='noreferrer noopener'>
+                        <i class="fa-brands fa-github soc-item soc-icon"></i>
+                    </a>
+
+                    <a href='https://codepen.io/robonexx' target='_blank' rel='noreferrer noopener'>
+                        <i class="fa-brands fa-codepen soc-item soc-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class='form_container'>
+                <form class='form' id="form" method="post" action="mailto:robert.wagar@gmail.com">
+                    <label>name:</label>
+                    <input type='text' name='name' autoComplete='off' placeholder="name" required>
+                    <label>email:</label>
+                    <input type='email' name='email' autoComplete='off' placeholder="email" required>
+                    <label>message:</label>
+                    <textarea type='textarea' name='message' autoComplete='off' placeholder="message"
+                        required></textarea>
+
+                    <button type='submit' class='submit_btn'>
+                        Submit
+                    </button>
+
+                </form>
+            </div>
+        </div>
+        <p class='form_answer'>Thanks for your mail! We will get back to you asap</p>
+    </div>
+
+
     <footer>
         <h4>&#9426; ROB - ONE - 2022</h4>
     </footer>
 
-    <script src="../js/menu.js" defer type="module"></script>
+
 </body>
 
 </html>

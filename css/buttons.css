@@ -68,10 +68,6 @@
     z-index: -1;
 }
 
-.btn_hack {
-  outline: none;
-  border: none;
-}
 
 @media screen and (width: 375px) and (height: 677px) {
   .btn {
