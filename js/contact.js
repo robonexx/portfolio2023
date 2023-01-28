@@ -1,4 +1,5 @@
 const mailBtn = document.querySelector('.mail_btn');
+const submitBtn = document.querySelector('.submit_btn');
 const inner = document.querySelector('.inner');
 const wrapper = document.querySelector('.wrapper');
 const formWrapper = document.querySelector('.contact_form_wrapper');
@@ -79,3 +80,61 @@ const animate = () => {
     });
   }
 };
+
+let msg = document.querySelector('.form_answer');
+
+function validateForm() {
+  let x = document.forms['form']['name'].value;
+  let y = document.forms['form']['email'].value;
+  let z = document.forms['form']['message'].value;
+
+  if (x == '') {
+    msg.textContent = 'Name must be filled out';
+    msg.style.color = 'tomato';
+    msg.classList.add('show');
+    setTimeout(() => {
+      msg.textContent = '';
+      msg.style.color = '#fff';
+      msg.classList.remove('show');
+    }, 5000);
+    return false;
+  }
+  if (y == '') {
+    msg.textContent = 'Email must be filled out';
+    msg.classList.add('show');
+    msg.style.color = 'tomato';
+    setTimeout(() => {
+      msg.textContent = '';
+      msg.style.color = '#fff';
+      msg.classList.remove('show');
+    }, 5000);
+    return false;
+  }
+  if (z == '') {
+    msg.textContent = 'Message must be filled out';
+    msg.classList.add('show');
+    msg.style.color = 'tomato';
+    setTimeout(() => {
+      msg.textContent = '';
+      msg.style.color = '#fff';
+      msg.classList.remove('show');
+    }, 5000);
+    return false;
+  }
+  if (!x == '' && !y == '' && !z == '') {
+    msg.textContent = "Thank you! We'll get back to you";
+    msg.classList.add('show');
+    msg.style.color = '#fff';
+    setTimeout(() => {
+      msg.textContent = '';
+      msg.classList.remove('show');
+    }, 5000);
+    return true;
+    document.forms.reset();
+  }
+}
+
+submitBtn.addEventListener('click', (e) => {
+  /* e.preventDefault(); */
+  validateForm();
+});
