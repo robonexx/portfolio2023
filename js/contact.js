@@ -207,7 +207,7 @@ const randomGreet = (array) => {
 
 let dailyGreet;
 
-function getQuote() {
+function getGreet() {
   dailyGreet = randomGreet(randomGreets);
 }
 var i = 0;
@@ -224,5 +224,5 @@ function typeWriter() {
 }
 
 greet.textContent = '';
-getQuote();
+getGreet();
 typeWriter();
