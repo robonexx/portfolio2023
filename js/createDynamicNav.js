@@ -66,9 +66,9 @@ function createNav(navArr) {
       let a = document.createElement('a');
       a.classList.add('nav_item_link');
       a.innerText = i.title;
-      a.href = `./pages/${i.title}.html`;
+      a.href = `/pages/${i.title}.html`;
       if (i.title === 'home') {
-        a.href = `./index.html`;
+        a.href = `/index.html`;
       }
       if (i.title === 'projects') {
         a.href = `#projects`;
