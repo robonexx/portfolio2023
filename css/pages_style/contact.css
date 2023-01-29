@@ -532,8 +532,9 @@ top: 30vh;
 .cv {
   padding: 0.25rem 0.5rem;
  position: absolute;
- top: 1rem;
- right: 1rem;
+ bottom: 10vh;
+ left: 50%;
+ transform: translateX(-50%);
  color: #fafafa;
  background-color: #000000;
 }
