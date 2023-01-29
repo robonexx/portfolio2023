@@ -1,16 +1,16 @@
-body {
+/* body {
   max-height: 100vh !important;
   max-height: 100dvh !important;
 }
 #contact {
   background-color: transparent;
   overflow-x: hidden;
-}
+} */
 
 
 .contact_bg {
 width: inherit;
-height: 100vh;
+height: 100%;
 position: absolute;
 top: 0;
 left: 0;
