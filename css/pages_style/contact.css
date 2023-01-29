@@ -4,6 +4,7 @@
   overflow-x: hidden;
 }
 
+
 .contact_bg {
 width: inherit;
 height: 100vh;
@@ -524,4 +525,58 @@ top: 30vh;
 .greet {
   font-size: 1rem;
 }
+}
+
+.cv {
+  padding: 0.25rem 0.5rem;
+ position: absolute;
+ top: 1rem;
+ right: 1rem;
+ color: #fafafa;
+ background-color: #000000;
+}
+
+#cv_rob {
+  cursor: pointer;
+}
+
+.frame {
+  padding: 4rem 2rem 2rem;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  display: none;
+  background-color: black;
+  border: 2px solid white;
+  z-index: 1000;
+}
+
+.frame.show {
+  display: block;
+}
+
+.close_frame_btn {
+  display: none;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  background-color: tomato;
+  border: 1px solid black;
+  color: white;
+}
+
+.close_frame_btn:hover,
+.close_frame_btn:active {
+  background-color: rgb(179, 45, 21);
+  cursor: pointer;
+}
+
+
+.close_frame_btn.show {
+  display: block;
 }
