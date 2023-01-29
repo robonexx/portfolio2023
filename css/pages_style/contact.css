@@ -2,6 +2,8 @@
 #contact {
   background-color: transparent;
   overflow-x: hidden;
+  max-height: 100vh;
+  max-height: 100dvh;
 }
 
 
