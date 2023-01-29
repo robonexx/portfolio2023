@@ -4,30 +4,46 @@
 @import url('./css/nav.css');
 @import url('./css/hamburger.css');
 @import url('./css/coffee.css');
-@import url('./css/footer.css');
+@import url('./css/hero.css');
 @import url('./css/sidebar.css');
 @import url('./css/buttons.css');
 @import url('./css/name_form.css');
 @import url('./css/intro.css');
 @import url('./css/section.css');
 @import url('./css/info_cards.css');
+@import url('./css/footer.css');
 
 
 
 :root {
-/* --color-1: #e27d60;
---color-2: #85dcbb;
---color-3: #c38d9e;
---color-4: #41b3a3;
---color-5: #553d67; */
+scroll-behavior: smooth;
+scroll-padding-top: 2rem;
 
---color-primary: #121212;
---color-secondary: #fafafa;
+/* ligthmode */
+--color-primary: #121416;
+--color-bg: #fafafa;
+--color-bg-accent: #ededed;
+
+--color-primary-btn: #ededed;
+--color-bg-btn: #121212;
+
+/* darkmode */
+--color-primary-dark:  #dbdbdb;
+--color-primary-dark-ac:  #d8d8d8;
+--color-bg-dark: #181818;
+--color-bg-dark-hover: #282828;
+
+--color-primary-btn-dark: #121212;
+--color-bg-btn-dark: #ededed;
+--color-bg-btn-dark-hover: #bdbdbd;
+
+--social-icons: #e5e5e5;
+--loader: #888;
 
 --color-gradient-bg: linear-gradient(120deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
+--color-gradient-sidebar: linear-gradient(30deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
 --color-nav-bg: linear-gradient(120deg, #181818 45%, #121212);
---color-bg: #ededed;
---color-bg-secondary: #181818;
+
 }
 
 *, *::before, *::after {
@@ -40,9 +56,8 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #ededed;
+    background-color: var(--color-bg);
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 .darkmode {
@@ -56,7 +71,7 @@ main {
     align-items: center;
     height: 100%;
     width: 90%;
-    background-color: #ededed;
+    background-color: transparent;
 }
 
 a {
@@ -80,58 +95,13 @@ p,
 h4 {
     margin: 0.5rem 0;
     font-family: var(--font-primary-light);    
-    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     color: black;
     font-weight: 200;
     letter-spacing: 2px;
-    line-height: 2rem;
+    line-height: 1.5;
 }
 
-.hero {
-    margin: 0;
-    padding: 2rem 0 0;
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 120px);
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;
-    object-position: center;
-    /* background: linear-gradient(0deg, #ededed 50%, lightgray ); */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
-}
-
-.hero > img {
-    width: 85%;
-    height: auto;
-    align-self: center;
-    filter: grayscale(100%);
-}
-
-.hero > h1,
-.hero > h4 {
-    text-align: left;
-}
-
-.hero > h1 {
-    color: var(--color-secondary);
-    text-shadow: 2px 2px 4px #000000;
-    margin: 0.5rem 0;
-}
-
-.hero > h4 {
-    color: var(--color-primary);
-}
-
-.hello {
-    max-width: 60%;
-}
-
-
-.call_to_action {
-    position: relative;
-    max-width: 60%;
-  }
 
 .projects {
     width: 100%;
@@ -152,17 +122,17 @@ article {
   }
 
 article h2 {
-    color: var(--color-secondary);
+    color: var(--color-primary-dark);
     font-size: clamp(3rem, 3.5vw, 4rem);
 }
 
   article p {
-    color: var(--color-secondary);
+    color: var(--color-primary-dark);
     text-align: center;
   }
 
   section:nth-child(2) {
-    background-color: #eaeaea;
+    background-color: var(--color-bg-accent);
   }
 
   .projects_wrapper {
@@ -203,37 +173,14 @@ article h2 {
         grid-template-columns: repeat(2, 1fr); 
     }
 
-    .hero {
-        width: 60%;
-    }
-
-
-    .hero > img {
-        width: 55%;
-    }
-    
-    .call_to_action,
-    .hello {
-       max-width: 40%;
-    }
 
 }
 
 
-@media(min-width: 768px) {    
+@media screen and (min-width: 768px) {    
     
     main {
         width: 80%;
-    }
-
-    .hero > img {
-        max-width: 65%;
-    }
-
- 
-    .call_to_action,
-    .hello {
-       max-width: 50%;
     }
 }   
       

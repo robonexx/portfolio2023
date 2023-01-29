@@ -36,8 +36,8 @@
   right: 0;
   left: 0;
   overflow: hidden;  
-  color: white;
-  background-color: #181818;
+  color: var(--color-primary-dark);
+  background-color: var(--color-bg-dark);
   background-size: cover; 
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
   display: -webkit-box;
@@ -80,7 +80,7 @@
 }
 
 .card_header:hover {
-  background-color: #282828;
+  background-color: var(--color-bg-dark-hover);
   cursor: pointer;
 }
 
@@ -116,21 +116,22 @@
   width: 80%;
   position: absolute;
   top: 50px;   
-  color: #888;
+  color: var(--color-primary-dark-ac);
   font-size: 0.8rem;    
+  line-height: 1;
   font-weight: 100;
 }
 
 .card_more_info,
 .card_less_info {
-  background-color: #ededed;
+  margin-top: auto;
   padding: .5rem 1rem;
   border: 0;
   font-weight: 300;
   cursor: pointer;
   text-transform: uppercase;
-  font-size: .6rem;
-  margin-top: auto;
+  font-size: .6rem; 
+  background-color: var(--color-bg-btn-dark);
   -webkit-transition: background 200ms ease-out,
  -webkit-transform 500ms ease-out;
   transition: background 200ms ease-out,
@@ -149,7 +150,7 @@
 .card_more_info:hover,
 .card_less_info:hover {
   outline: none;
-  background: rgb(189, 189, 189);
+  background: var(--color-bg-btn-dark-hover);
 }
 
 .card_more_info {
@@ -203,9 +204,9 @@
 
 .card_content p {
   margin: 1rem 0 0 0;
-  font-size: 0.7rem;
-  color: #ededed;
   margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--color-primary-dark);  
   line-height: 1;
 }
 
@@ -223,14 +224,15 @@
 }
 
 .card_content .links a {
-  background-color: rgba(195, 195, 195, 0.8);
+  margin-top: auto;
   padding: .5rem 1rem;
+  color: var(--color-primary);
+  background-color: var(--color-bg-btn-dark-hover);
   border: 0;
   font-weight: 300;
   cursor: pointer;
   text-transform: uppercase;
   font-size: .8rem;
-  margin-top: auto;
   -webkit-transition: background 200ms ease-out,
  -webkit-transform 500ms ease-out;
   transition: background 200ms ease-out,
@@ -245,12 +247,12 @@
 }
 
 .card_content .links a:nth-child(1) {
-  border-right: 3px solid orangered;
+  border-right: 3px solid var(--color-primary-dark);
 }
 
 .card_content .links a:hover,
 .card_content .links a:focus {
-  background-color: white;
+  background-color: var(--color-bg-btn-dark);
 }
 
 .card_open .card_header {

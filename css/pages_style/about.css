@@ -28,7 +28,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color:#ededed;
+    background-color: var(--color-bg);
     background-image: url('../../assets/images/robertwagar.webp');
     background-repeat: no-repeat;
     background-position: center;

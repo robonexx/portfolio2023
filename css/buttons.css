@@ -6,8 +6,9 @@
   font-weight: 300;
   cursor: pointer;
   text-transform: uppercase;
-  background-color: var(--color-bg-secondary);
-  color: var(--color-secondary);
+  color: var(--color-primary-btn);
+  background-color: var(--color-bg-btn);
+  
   font-size: .8rem;    
   -webkit-transition: background 200ms ease-out,
   -webkit-transform 500ms ease-out;    
@@ -26,8 +27,8 @@
 .btn:hover,
 .btn:active {
   outline: none;
-  background: rgb(189, 189, 189);
-  color: var(--color-primary);
+  color: var(--color-primary-btn-dark);
+  background-color: var(--color-bg-btn-dark);  
   -webkit-transform: translateY(-3px);
       -ms-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -38,7 +39,6 @@
 /* call to action on index page */
 
 .c2a_btn {
-  margin-top: 1rem;
   width: 100%;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .c2a_btn:hover {
-color: white;
+color: var(--color-primary-btn);
 }
 
 .c2a_btn:hover:before {

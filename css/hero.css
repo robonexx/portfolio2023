@@ -1,0 +1,117 @@
+
+.hero {
+    margin: 0;
+    padding: 0 0 2rem;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero > img {
+    width: 85%;
+    height: auto;
+    align-self: center;
+    filter: grayscale(100%);
+}
+
+.hero > h1,
+.hero > h4 {
+    text-align: left;
+}
+
+.hero > h1 {
+    color: var(--color-primary-dark);
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0.5rem 0;
+}
+
+.hero > h4 {
+    color: var(--color-primary);
+}
+
+.hello {
+    max-width: 60%;
+}
+
+
+.call_to_action {
+    position: relative;
+    max-width: 60%;
+  }
+
+  @media (min-width: 61.250em) {
+    
+    .hero {
+        width: 60%;
+    }
+
+
+    .hero > img {
+        width: 55%;
+    }
+    
+    .call_to_action,
+    .hello {
+       max-width: 40%;
+    }
+  }
+
+  @media (min-width: 48em) {
+    
+   
+    .hero > img {
+        max-width: 65%;
+    }
+
+ 
+    .call_to_action,
+    .hello {
+       max-width: 50%;
+    }
+  }
+
+  @media (min-width: 980px) {
+    
+    .hero {
+        width: 60%;
+    }
+
+
+    .hero > img {
+        width: 55%;
+    }
+    
+    .call_to_action,
+    .hello {
+       max-width: 40%;
+    }
+  }
+
+  
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2)
+{  
+
+.hero > img {
+width: 60%;
+}
+
+}
+
+@media all and (min-width: 28.750em), all and (max-width: 47.8em) {
+    .hero > img {
+        width: 55%;
+    }
+    .call_to_action,
+    .hello {
+        margin-bottom: 0.5rem;
+       max-width: 50%;
+    }
+}

@@ -64,8 +64,8 @@
     font-weight: 300;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: var(--color-bg-secondary);
-    color: var(--color-secondary);
+    background-color: var(--color-bg-btn);
+    color: var(--color-primary-btn);
     font-size: .8rem;    
     -webkit-transition: background 200ms ease-out,
     -webkit-transform 500ms ease-out;    
@@ -83,6 +83,6 @@
 .submit_btn:hover {
     border: none;
     padding: .5rem 1rem;
-    background-color: var(--color-secondary);
-    color: var(--color-bg-secondary);
+    background-color: var(--color-bg-btn-dark);
+    color: var(--color-primary);
 }

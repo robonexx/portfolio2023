@@ -27,10 +27,17 @@ header {
 }
 
 header.header_bg {
-    -webkit-transition: background 0.1s ease;
-    -o-transition: background 0.1s ease;
-    transition: background 0.1s ease;
-    background-color: var(--color-secondary);
+    -webkit-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+    background-color: var(--color-bg);
+}
+
+header.header_bg_mobile {
+    -webkit-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    background-color: var(--color-bg-dark-hover);
 }
 
 header > a {

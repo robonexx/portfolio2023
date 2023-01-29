@@ -19,8 +19,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #181818;
-    color: #ededed;
+            color: var(--color-bg-accent);
+            background-color: var(--color-bg-dark);
     overflow: hidden;
 }
 
@@ -37,7 +37,7 @@
 .loader {
     position: relative;
     margin: 4rem 0;
-    background-color: #888;
+    background-color: var(--loader);
     width: 0;
     height: 12px;
     display: -webkit-box;
@@ -52,11 +52,11 @@
 
     /* setting font and color and then setting innerHTML with anime.js */
     font-size: 0.8rem;
-    color: #ededed;
+    color: var(--color-bg-accent);
 }
 
 #enter_btn {
-    background-color: #ededed;
+    background-color: var(--color-bg-accent);
     padding: .5rem 1rem;
     border: 0;
     font-weight: 300;
