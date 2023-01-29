@@ -1,10 +1,7 @@
-
 body {
-  width: 100%;
-  max-height: 100vh;
-  max-height: 100dvh;
+  max-height: 100vh !important;
+  max-height: 100dvh !important;
 }
-
 #contact {
   background-color: transparent;
   overflow-x: hidden;
