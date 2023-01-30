@@ -28,7 +28,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: var(--color-bg);
+    background-color: var(--bg);
     background-image: url('../../assets/images/robertwagar.webp');
     background-repeat: no-repeat;
     background-position: center;
@@ -41,15 +41,10 @@
     text-align: center;
 }
 
-.hero > h2 {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    margin: 1rem 0;
+#about .hero > h2 {
+    color: var(--color-secondary);
 }
 
-.hero > p {
-    color: #888;
-}
 
 @media(min-width: 768px) {
     

@@ -292,9 +292,8 @@ border: 0;
 font-weight: 300;
 cursor: pointer;
 text-transform: uppercase;
-background-color: var(--color-primary);
+background-color: var(--bg);
 color: var(--color-secondary);
-color: white;
 font-size: .6rem;    
 -webkit-transition: background 200ms ease-out,
 -webkit-transform 500ms ease-out;    

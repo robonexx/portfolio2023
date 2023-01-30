@@ -1,5 +1,6 @@
 let menuBtn = document.querySelector('#hamburger');
 let menu = document.querySelector('nav > ul');
+let theme = document.querySelector('.toggleMode');
 
 menuBtn.addEventListener('click', () => {
   console.log('clicked button');
@@ -31,17 +32,19 @@ if (window.innerWidth > 768) {
       nav.classList.remove('border');
       head.style.color = '#121212';
       header.classList.add('header_bg');
+      theme.style.transform = 'translateX(0px)';
       coffee.forEach((c) => {
-        c.style.fill = '#181818';
-        c.style.stroke = '#181818';
+        c.style.fill = 'var(--color-alt)';
+        c.style.stroke = 'var(--color-alt)';
       });
     } else {
       nav.style.top = '0px';
       nav.classList.add('border');
-      head.style.color = '#fafafa';
+      head.style.color = 'var(--color-alt)';
       header.classList.remove('header_bg');
+      theme.style.transform = 'translateX(30vw) translateY(-0.2rem)';
       coffee.forEach((c) => {
-        c.style.fill = '#fafafa';
+        c.style.fill = 'var(--color-alt)';
         c.style.stroke = '#ededed';
       });
     }
@@ -52,9 +55,9 @@ if (window.innerWidth > 768) {
 if (window.innerWidth < 768) {
   var prevScrollpos = window.pageYOffset;
   header.classList.add('header_bg_mobile');
-  head.style.color = 'white';
+  head.style.color = 'var(--color-alt)';
   coffee.forEach((c) => {
-    c.style.fill = '#fafafa';
+    c.style.fill = 'var(--color-alt)';
     c.style.stroke = '#ededed';
   });
   window.onscroll = function () {

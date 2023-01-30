@@ -31,7 +31,7 @@
   
 .sidebar .social .soc-icon {
     z-index: 20;
-    color: #070707;
+    color: var(--color-alt);
     font-size: 1rem;
     padding: 0.25rem;
     -webkit-transition: -webkit-transform .3s ease-in-out;
