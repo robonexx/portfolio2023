@@ -7,6 +7,8 @@
   overflow-x: hidden;
 } */
 
+/* for toggle mode on contact page */
+
 
 .contact_bg {
 width: inherit;
@@ -464,6 +466,10 @@ height: 40%;
 }
 
 @media (min-width: 768px) {
+
+  #contact nav .menu .toggleMode {
+    top: 0.25rem;
+  }
 
 .contact_form_wrapper {
   padding: 2rem;   

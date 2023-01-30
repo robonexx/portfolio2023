@@ -1,6 +1,6 @@
-
+/* Toggle mode contact page is set in css > pages_style > contact.css media quaries */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 50;
@@ -27,9 +27,9 @@ header {
 }
 
 header.header_bg {
-    -webkit-transition: background 0.2s ease;
-    -o-transition: background 0.2s ease;
-    transition: background 0.2s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    transition: background 0.4s ease;
     background-color: var(--bg-opposite);
 }
 
@@ -42,6 +42,7 @@ header.header_bg_mobile {
 
 header > a {
     position: relative;
+    color: var(--color-primary);
     text-decoration: none;
     pointer-events: visible;
     cursor: pointer;
@@ -53,7 +54,7 @@ header > a > h3 {
     font-family: var(--font-heading);
     font-size: clamp(1.4rem, 3vw, 2rem); 
     line-height: 1;
-    color: var(--color-alt);
+    
     font-weight: 100;
 }
 

@@ -30,7 +30,7 @@ if (window.innerWidth > 768) {
     if (prevScrollpos > currentScrollpos) {
       nav.style.top = '60px';
       nav.classList.remove('border');
-      head.style.color = '#121212';
+      head.style.color = 'var(--color-alt';
       header.classList.add('header_bg');
       theme.style.transform = 'translateX(0px)';
       coffee.forEach((c) => {
