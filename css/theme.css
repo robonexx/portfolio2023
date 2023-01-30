@@ -9,9 +9,6 @@
     pointer-events: all;
 }
 
-
-
-
 input[type=checkbox]{
 	height: 0;
 	width: 0;
@@ -61,4 +58,17 @@ html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
+}
+
+@media(min-width: 768px) {
+    .toggleMode {
+        position: fixed;
+        top: 1rem;
+        right: 0.5rem;
+        width: 20px;
+        height: 20px;
+        z-index: 10;
+        pointer-events: all;
+    }
+
 }
