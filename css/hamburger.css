@@ -5,7 +5,7 @@
     bottom: 0;
     right: 0;
     left: auto;
-    background-color: white;
+    background-color: var(--bg);
     border-radius: 50%;
     -webkit-filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
             filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));

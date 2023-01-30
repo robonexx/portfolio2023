@@ -3,6 +3,7 @@
 @import url('./css/header.css');
 @import url('./css/nav.css');
 @import url('./css/hamburger.css');
+@import url('./css/theme.css');
 @import url('./css/coffee.css');
 @import url('./css/hero.css');
 @import url('./css/sidebar.css');
@@ -44,6 +45,34 @@ scroll-padding-top: 2rem;
 --color-gradient-sidebar: linear-gradient(30deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
 --color-nav-bg: linear-gradient(120deg, #181818 45%, #121212);
 
+/* testing dark light mode */
+--color-primary: #121416;
+--bg: whitesmoke;
+--color-headings:  rgb(8, 4, 22);
+--color-p:  rgb(23, 12, 73);
+--color-h1: #181818;
+
+}
+
+
+html {
+    --color-primary: #121416;
+    --bg: whitesmoke;
+    --color-headings:  rgb(8, 4, 22);
+    --color-p:  rgb(23, 12, 73);
+    --color-h1: #181818;
+    --hamburger: #fafafa;
+    
+}
+
+
+html[data-theme='dark'] {
+    --color-primary:  #dbdbdb;
+    --bg: #181818;
+    --color-headings: #121212;
+    --color-p: #ededed;
+   --color-h1: #fafafa;
+   --hamburger: #fafafa;
 }
 
 *, *::before, *::after {
@@ -56,7 +85,7 @@ scroll-padding-top: 2rem;
 body {
     width: 100%;
     height: 100%;
-    background-color: var(--color-bg);
+    background-color: var(--bg);
     overflow-x: hidden;
 }
 
@@ -96,7 +125,7 @@ h4 {
     margin: 0.5rem 0;
     font-family: var(--font-primary-light);    
     font-size: clamp(1rem, 1.5vw, 1.5rem);
-    color: black;
+    color: var(--color-primary);
     font-weight: 200;
     letter-spacing: 2px;
     line-height: 1.5;
