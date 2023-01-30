@@ -25,7 +25,7 @@
 }
 
 .hero > h1 {
-    color: var(--color-primary-dark);
+    color: var(--color-h1);
     text-shadow: 2px 2px 4px #000000;
     margin: 0.5rem 0;
 }

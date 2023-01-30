@@ -5,7 +5,7 @@
     bottom: 0;
     right: 0;
     left: auto;
-    background-color: var(--bg);
+    background-color: var(--hamburger);
     border-radius: 50%;
     -webkit-filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
             filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.225));
@@ -24,7 +24,7 @@
 .hamburger span {
     width: 1.5rem;
     height: .1rem;
-    background-color: var(--color-primary);
+    background-color: var(--line);
     margin-bottom: .5rem;
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
@@ -50,7 +50,7 @@
     top: 0;
     width: 1.5rem;
     height: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--line);
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;

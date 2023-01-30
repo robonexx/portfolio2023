@@ -58,10 +58,17 @@ scroll-padding-top: 2rem;
 html {
     --color-primary: #121416;
     --bg: whitesmoke;
+    --bg-alt: #ededed;
+    --bg-opposite: #282828;
+   
+    --header: #282828;
+    --hamburger: #121212;
+    --line: #f8f8f8;
+    --nav: #020208;
+    --links: #f4f4f4;
     --color-headings:  rgb(8, 4, 22);
-    --color-p:  rgb(23, 12, 73);
+    --color-p:  #232328;
     --color-h1: #181818;
-    --hamburger: #fafafa;
     
 }
 
@@ -69,11 +76,20 @@ html {
 html[data-theme='dark'] {
     --color-primary:  #dbdbdb;
     --bg: #181818;
+    --bg-alt: #000;
+    --bg-opposite: #dddddd;
+   
+    --header: #282828;
+    --hamburger: #fafafa;
+    --line: #121212;
+    --nav: #282828;
+    --links: rgb(197, 197, 197);
+
     --color-headings: #121212;
-    --color-p: #ededed;
-   --color-h1: #fafafa;
-   --hamburger: #fafafa;
+    --color-p:  #e5e5e5;
+    --color-h1: #fafafa;
 }
+
 
 *, *::before, *::after {
     margin: 0;
@@ -161,7 +177,7 @@ article h2 {
   }
 
   section:nth-child(2) {
-    background-color: var(--color-bg-accent);
+    background-color: var(--bg-alt);
   }
 
   .projects_wrapper {

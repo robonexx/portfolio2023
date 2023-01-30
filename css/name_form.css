@@ -17,6 +17,7 @@
 }
 
 .input_form > label {
+    color: var(--color-primary);
     font-family: var(--font-primary-light);
 }
 

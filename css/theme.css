@@ -2,7 +2,7 @@
 .toggleMode {
     position: absolute;
     top: 2rem;
-    right: 0rem;
+    left: 5rem;
     width: 20px;
     height: 20px;
     z-index: 10;
@@ -62,13 +62,7 @@ html.transition *:after {
 
 @media(min-width: 768px) {
     .toggleMode {
-        position: fixed;
-        top: 0rem;
-        right: 0.5rem;
-        width: 20px;
-        height: 20px;
-        z-index: 10000;
-        pointer-events: all;
+       
     }
 
 }
