@@ -38,30 +38,22 @@ scroll-padding-top: 2rem;
 --color-bg-btn-dark: #ededed;
 --color-bg-btn-dark-hover: #bdbdbd;
 
---social-icons: #e5e5e5;
---loader: #888;
 
 --color-gradient-bg: linear-gradient(120deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
 --color-gradient-sidebar: linear-gradient(30deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
 --color-nav-bg: linear-gradient(120deg, #181818 45%, #121212);
-
-/* testing dark light mode */
---color-primary: #121416;
---bg: whitesmoke;
---color-headings:  rgb(8, 4, 22);
---color-p:  rgb(23, 12, 73);
---color-h1: #181818;
 
 }
 
 
 html {
     --color-primary: #121416;
+    --color-secondary: #232328;
+    --color-alt:  whitesmoke;
     --bg: whitesmoke;
     --bg-alt: #ededed;
     --bg-opposite: #282828;
    
-    --header: #282828;
     --hamburger: #121212;
     --line: #f8f8f8;
     --nav: #020208;
@@ -69,17 +61,22 @@ html {
     --color-headings:  rgb(8, 4, 22);
     --color-p:  #232328;
     --color-h1: #181818;
+
+    --social-icons: #e5e5e5;
+    --loader: #888;
+
     
 }
 
 
 html[data-theme='dark'] {
     --color-primary:  #dbdbdb;
+    --color-secondary:  #f0f0f0;
+    --color-alt:  #181818;
     --bg: #181818;
     --bg-alt: #000;
     --bg-opposite: #dddddd;
    
-    --header: #282828;
     --hamburger: #fafafa;
     --line: #121212;
     --nav: #282828;
@@ -115,7 +112,7 @@ main {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 90%;
+    width: 85%;
     background-color: transparent;
 }
 
@@ -130,6 +127,7 @@ h1 {
 }
 
 h2 {
+    color: var(--color-secondary);
     font-family: var(--font-primary);
     font-size: clamp(1.5rem, 2vw, 2.5rem);
     font-weight: 400;
