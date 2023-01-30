@@ -63,7 +63,7 @@ html.transition *:after {
 @media(min-width: 768px) {
     .toggleMode {
         position: fixed;
-        top: 1rem;
+        top: 0rem;
         right: 0.5rem;
         width: 20px;
         height: 20px;
