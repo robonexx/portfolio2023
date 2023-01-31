@@ -25,6 +25,8 @@
 }
 
 .intro > h1 {
+    position: absolute;
+    top: 20vh;
     margin: 2rem 0;
     font-weight: 100;
 }
@@ -35,8 +37,8 @@
 }
 
 .loader {
-    position: relative;
-    margin: 4rem 0;
+    position: absolute;
+    bottom: 10vh;
     background-color: var(--loader);
     width: 0;
     height: 12px;
@@ -56,6 +58,8 @@
 }
 
 #enter_btn {
+    position: absolute;
+    bottom: 20vh;
     background-color: var(--color-bg-accent);
     padding: .5rem 1rem;
     border: 0;

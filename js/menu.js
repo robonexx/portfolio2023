@@ -19,8 +19,8 @@ menuBtn.addEventListener('click', () => {
 });
 
 const header = document.querySelector('header');
-let head = document.querySelector('header > a > h3');
-let coffee = [...document.querySelectorAll('.coffee_cup > path')];
+/* let head = document.querySelector('header > a > h3');
+let coffee = [...document.querySelectorAll('.coffee_cup > path')]; */
 
 if (window.innerWidth > 768) {
   var prevScrollpos = window.pageYOffset;
@@ -30,23 +30,23 @@ if (window.innerWidth > 768) {
     if (prevScrollpos > currentScrollpos) {
       nav.style.top = '60px';
       nav.classList.remove('border');
-      head.style.color = 'var(--color-alt';
+      /*  head.style.color = 'var(--color-alt'; */
       header.classList.add('header_bg');
       theme.style.transform = 'translateX(0px)';
-      coffee.forEach((c) => {
+      /* coffee.forEach((c) => {
         c.style.fill = 'var(--color-alt)';
         c.style.stroke = 'var(--color-alt)';
-      });
+      }); */
     } else {
       nav.style.top = '0px';
       nav.classList.add('border');
-      head.style.color = 'var(--color-alt)';
+      /*  head.style.color = 'var(--color-alt)'; */
       header.classList.remove('header_bg');
-      theme.style.transform = 'translateX(30vw) translateY(-0.2rem)';
-      coffee.forEach((c) => {
+      theme.style.transform = 'translateX(100px) translateY(-0.2rem)';
+      /* coffee.forEach((c) => {
         c.style.fill = 'var(--color-alt)';
         c.style.stroke = '#ededed';
-      });
+      }); */
     }
     prevScrollpos = currentScrollpos;
   };
@@ -55,21 +55,20 @@ if (window.innerWidth > 768) {
 if (window.innerWidth < 768) {
   var prevScrollpos = window.pageYOffset;
   header.classList.add('header_bg_mobile');
-  head.style.color = 'var(--color-alt)';
+  /*  head.style.color = 'var(--color-alt)';
   coffee.forEach((c) => {
     c.style.fill = 'var(--color-alt)';
     c.style.stroke = '#ededed';
-  });
+  }); */
   window.onscroll = function () {
-    let nav = document.querySelector('nav');
     var currentScrollpos = window.pageYOffset;
     if (prevScrollpos > currentScrollpos) {
       header.style.top = '0px';
-      nav.style.top = '60px';
+
       header.classList.add('header_bg_mobile');
     } else {
       header.style.top = '-70px';
-      nav.style.top = '-70px';
+
       header.classList.remove('header_bg_mobile');
     }
     prevScrollpos = currentScrollpos;

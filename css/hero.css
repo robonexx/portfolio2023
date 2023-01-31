@@ -1,7 +1,7 @@
 
 .hero {
     margin: 0;
-    padding: 0 0 2rem;
+    padding: 0 0 2rem 2rem;
     position: relative;
     width: 100%;
     height: calc(100vh - 120px);
@@ -42,6 +42,38 @@
 .call_to_action {
     position: relative;
     max-width: 60%;
+  }
+
+  
+.scroll1 {
+    width: 1.4rem; 
+    height: 1.4rem; 
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px; 
+    z-index: 80;   
+    background-color: transparent; 
+    border-width: 0 0.2rem 0.2rem 0; 
+    border-style: solid; 
+    border-color: rgb(32, 32, 32); 
+    animation: 
+    scrolldown 2s ease-in-out infinite;
+  }
+  
+  .scroll2 {
+    width: 1.4rem; 
+    height: 1.4rem; 
+    position: absolute; 
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent; 
+    z-index: 80; 
+    border-width: 0 0.2rem 0.2rem 0; 
+    border-style: solid; 
+    border-color: rgb(34, 34, 34); 
+    animation: scrolldown 2s ease-in-out infinite 0.15s;
   }
 
   @media (min-width: 61.250em) {
@@ -112,6 +144,6 @@ width: 60%;
     .call_to_action,
     .hello {
         margin-bottom: 0.5rem;
-       max-width: 50%;
+       max-width: 60%;
     }
 }

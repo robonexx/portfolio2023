@@ -39,6 +39,8 @@
 /* call to action on index page */
 
 .c2a_btn {
+  position: relative;
+  margin-top: 2rem;
   width: 100%;
 }
 
@@ -89,6 +91,7 @@ color: var(--color-primary-btn);
 outline: none;
 border: none;
 }
+
 
 @media screen and (width: 375px) and (height: 677px) {
 .btn {
