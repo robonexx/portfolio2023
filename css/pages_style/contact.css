@@ -17,6 +17,8 @@ position: absolute;
 top: 0;
 left: 0;
 background-image: url('../../assets/images/meetingroom.jpg');
+background-color: black;
+mix-blend-mode: normal;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: bottom center;

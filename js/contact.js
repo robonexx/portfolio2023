@@ -7,6 +7,14 @@ const form = document.querySelector('form');
 const contactInfo = document.querySelector('.contact_info_container');
 const formContainer = document.querySelector('.form_container');
 
+const contactBg = document.querySelector('.contact_bg');
+
+let checkTheme = localStorage.getItem('theme');
+if (checkTheme === 'light') {
+} else {
+  contactBg.style.mixBlendMode = 'hard-light';
+}
+
 mailBtn.addEventListener('click', () => {
   formWrapper.classList.toggle('active');
   wrapper.classList.toggle('active');
