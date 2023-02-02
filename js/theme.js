@@ -1,15 +1,15 @@
 var checkbox = document.querySelector('input[name=theme]');
 
-let mode = '';
+let mode = 'light';
 
 mode = localStorage.getItem('theme');
 
 document.documentElement.setAttribute('data-theme', mode);
 
-if (mode === 'dark') {
+if (mode == 'dark') {
   checkbox.setAttribute('checked', true);
 } else {
-  checkbox.setAttribute('checked', false);
+  checkbox.removeAttribute('checked');
 }
 
 checkbox.addEventListener('change', function () {
@@ -18,12 +18,13 @@ checkbox.addEventListener('change', function () {
     mode = 'dark';
     document.documentElement.setAttribute('data-theme', mode);
     localStorage.setItem('theme', mode);
+    checkbox.setAttribute('checked', true);
   } else {
     trans();
     mode = 'light';
     document.documentElement.setAttribute('data-theme', mode);
     localStorage.setItem('theme', mode);
-    checkbox.setAttribute('checked', false);
+    checkbox.removeAttribute('checked');
   }
   console.log(mode);
 });
@@ -35,4 +36,4 @@ let trans = () => {
   }, 500);
 };
 
-console.log(mode);
+console.log(mode, checkbox.attributes);
