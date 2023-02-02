@@ -2,7 +2,8 @@ let menuBtn = document.querySelector('#hamburger');
 let menu = document.querySelector('nav > ul');
 let theme = document.querySelector('.toggleMode');
 
-menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
   console.log('clicked button');
   menuBtn.classList.toggle('active');
   menu.classList.toggle('open');
