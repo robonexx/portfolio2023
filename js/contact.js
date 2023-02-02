@@ -175,10 +175,10 @@ if (!greetName || greetName === undefined || greetName === '') {
 
 export const randomGreets = [
   {
-    text: `Hi there again ${n}, looking forward to see what you have in mind, click the email icon on the left to fill in the form, connect thru linkedin or check my pages on github, codepen`,
+    text: `Hi there ${n}, looking forward to see what you have in mind, click the email icon on the left to fill in the form, connect thru linkedin or check my pages on github, codepen`,
   },
   {
-    text: `Hello there ${n}, clickedi clackedi on the email icon and you get some contact options, maybe you wanna check my projects on github or codepen too`,
+    text: `Hello there ${n}, click on the email icon to the left and you get some contact options, maybe you wanna check my projects on github or codepen too`,
   },
   {
     text: `Hi ${n}, I'd love to hear from you, just click the email icon and choose you prefered way to contact me, linkedin is fine too :D`,
@@ -190,7 +190,7 @@ export const randomGreets = [
     text: `Hi there ${n}, got an idea you want to bring to life? feel free to contact me, just click on the icon and fill in the form or connect thru linkedin`,
   },
   {
-    text: `Hello my ${n}, I bet you wanna bring those ideas of yours to life asap, looking forward to heard whats on your mind`,
+    text: `Hello ${n}, I bet you wanna bring those ideas of yours to life asap, looking forward to heard what's on your mind`,
   },
 ];
 
