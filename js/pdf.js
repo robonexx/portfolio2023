@@ -1,6 +1,7 @@
 const cv = document.querySelector('#cv_rob');
 const closeFrameBtn = document.querySelector('.close_frame_btn');
-cv.addEventListener('click', () => {
+
+cv.addEventListener('dblclick', () => {
   closeFrameBtn.classList.add('show');
   document.querySelector('.frame').classList.add('show');
 });
